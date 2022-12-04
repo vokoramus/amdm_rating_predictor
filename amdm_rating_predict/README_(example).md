@@ -18,9 +18,10 @@ API: flask
 ### Клонируем репозиторий и создаем образ
 ```
 $ git clone https://github.com/vokoramus/amdm_rating_predictor.git
-$ cd GB_docker_flask_example
-$ docker build -t fimochka/gb_docker_flask_example .
+$ cd amdm_rating_predict
+$ docker build -t  .
 ```
+docker build -t amdm_rating_predictor:v0.16 .
 
 ### Запускаем контейнер
 

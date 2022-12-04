@@ -1,8 +1,8 @@
-#FROM python:3.8
-FROM ubuntu
+FROM python:3.8-slim
+#FROM ubuntu
 LABEL maintainer="vokoramus01@gmail.com"
 RUN apt-get update -y
-RUN apt-get install -y python-pip
+#RUN apt-get install -y python-pip
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
